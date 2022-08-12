@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+  --White: hsl(0, 0%, 100%); /* (main heading, stats)*/
+  --Slightlytransparentwhite: hsla(0, 0%, 100%, 0.75); /*(main paragraph)*/
+  --Slightlytransparentwhite2: hsla(0, 0%, 100%, 0.6); /*(stat headings)*/
+  --Verydarkblue: hsl(233, 47%, 7%); /*(main background)*/
+  --Darkdesaturatedblue: hsl(244, 38%, 16%); /*(card background)*/
+  --Softviolet: hsl(277, 64%, 61%); /* (accent)*/
+}
+body {
+  font-size: 15px;
+  background-color: var(--Verydarkblue);
+  color: var(--White);
+}
+#text {
+  color: var(--Softviolet);
+}
+h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+p {
+  color: var(--Slightlytransparentwhite);
+  padding: 10px 0 10px 0;
+  font-weight: 400;
+  font-family:  'Lexend Deca', sans-serif;
+}
+.container{
+    margin: auto;
+    text-align: center;
+    background-color: var(--Darkdesaturatedblue);
+    width: 250px;
+    border-radius: 5px;
+}
+
+.container img {
+    max-width: 250px;
+    border-radius: 5px 5px 0 0;
+}
+.image{
+    background: url(./images/image-header-mobile.jpg);
+    background-size: cover;
+    position: relative;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+}
+.purple{
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+    background-color:  hsla(277, 64%, 61%, 0.766);
+
+}
+
+
+.text{
+    padding:30px;
+}
+.stats{
+    padding: 20px 0 20px 0px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: var(--Slightlytransparentwhite2);
+    text-transform: uppercase;
+}
+.statnum{
+    padding: 10px 0 10px 0;
+    font-weight: 700;
+    color: var(--White);
+}
+@media screen and (min-width:700px){
+    .container{
+        
+        margin: auto;
+        justify-content:start;
+        width:65em;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .text{
+        padding:30px;
+        width: 300px;
+    }
+    .image{
+       background: url(./images/image-header-desktop.jpg) no-repeat cover;
+        height: auto;
+        width:100%;
+        border-radius: 0px 5px 5px 0;
+    }
+    .purple{
+        height: 550px;
+        width:100%;
+        border-radius: 0px 5px 5px 0;
+        background-color:  hsla(277, 64%, 61%, 0.766);
+    
+    }
+}
